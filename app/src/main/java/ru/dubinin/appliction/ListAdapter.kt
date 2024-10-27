@@ -15,7 +15,6 @@ class ListAdapter : RecyclerView.Adapter<ViewHolder>() {
         }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        Log.d("ADD", "onCreateViewHolder")
         return ViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.item_view, parent, false)
         )
@@ -27,7 +26,6 @@ class ListAdapter : RecyclerView.Adapter<ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(items[position])
-        Log.d("ADD", "onBindViewHolder")
     }
 
     fun addItems(item: Int) {

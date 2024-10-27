@@ -39,7 +39,6 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             adapter.addItems(adapter.itemCount + 1)
-            Log.d("ADD", "${adapter.itemCount + 1}")
         }
 
         if (savedInstanceState != null) {
